@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Tenor+Sans&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png" alt=""></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fas fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fas fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Our Certificates & Online Programs for 2026</h1>
+    </section>
+
+    <!-- Blog page content -->
+    <section class="blog-content">
+        <div class="row">
+            <div class="blog-left">
+                <img src="images/certificate.jpg">
+                <h2>Our Certificates & Online Programs for 2026</h2>
+                <p>At Eduford University, our Certificates & Online Programs for 2026 represent a commitment to accessible, high-quality education tailored for the modern learner. These programs are designed to equip professionals, recent graduates, and career changers with specialized skills in high-demand fields like business, technology, and sustainable development. Drawing from our legacy of academic excellence in Cameroon, we offer flexible, fully online certificates that can be completed in as little as six months, allowing you to balance work, family, and study. Whether you're aiming to upskill for a promotion or pivot to a new industry, our programs feature interactive modules, expert-led webinars, and real-world projects developed in collaboration with industry partners. With rolling admissions starting January 2026, these credentials not only enhance your resume but also open doors to global opportunities, reflecting Eduford's dedication to fostering innovation and leadership across Africa and beyond.</p>
+                <br>
+                <p>Eduford's Certificates & Online Programs for 2026 span diverse disciplines, including Digital Marketing Essentials, Data Analytics for Decision-Making, Sustainable Business Practices, and Advanced Project Management. Each certificate comprises 4-6 courses, blending theoretical foundations with practical applications through case studies inspired by Cameroon's vibrant economy. Fully asynchronous, these programs accommodate busy schedules with mobile-friendly access, self-paced learning, and cohort-based discussions for peer collaboration. Priced affordably at competitive rates, they include lifetime access to course materials and alumni networks for ongoing support. Launching in 2026, this lineup responds to emerging trends like AI integration and green technologies, ensuring graduates are job-ready and adaptable in a rapidly evolving job market.</p>
+                <br>
+                <p>Enrolling in Eduford's Certificates & Online Programs for 2026 delivers tangible benefits, from enhanced employability— with 90% of alumni reporting career advancements within six months—to stackable credits toward our bachelor's or master's degrees. These credentials are recognized by employers across Africa and Europe, boosting your professional profile on LinkedIn and beyond. Beyond skills acquisition, you'll join a supportive community of lifelong learners, gaining access to career services, internships, and exclusive webinars. As we gear up for 2026, these programs embody Eduford's vision: empowering individuals to drive sustainable progress in Cameroon and the global arena, one certificate at a time.</p>
+
+
+                <div class="comment-box">
+                    <h3>Leave a comment</h3>
+                    <form action="" class="comment-form">
+                        <input type="text" placeholder="Enter Name">
+                        <input type="email" placeholder="Enter Email">
+                        <textarea name="" rows="5" id="" placeholder="Comment Here"></textarea>
+                        <button type="submit" class="hero-btn red-btn">POST COMMENT</button>
+                    </form>
+                </div>
+
+
+            </div>
+            <div class="blog-right">
+                <h3>Post Categories</h3>
+                <div>
+                    <span>Business Analytics</span>
+                    <span>21</span>
+                </div>
+                <div>
+                    <span>Data Science</span>
+                    <span>28</span>
+                </div>
+                <div>
+                    <span>Machine Learning</span>
+                    <span>15</span>
+                </div>
+                <div>
+                    <span>Computer Science</span>
+                    <span>34</span>
+                </div>
+                <div>
+                    <span>AutoCAD</span>
+                    <span>42</span>
+                </div>
+                <div>
+                    <span>Journalism</span>
+                    <span>22</span>
+                </div>
+                <div>
+                    <span>Commerce</span>
+                    <span>30</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Eduford University drives academic excellence, producing top graduates who lead innovation and progress in Cameroon. Our legacy<br> of success empowers students to achieve greatness through knowledge, integrity, and impactful contributions to society.</p>
+        <div class="icons">
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin-in"></i>
+        </div>
+        <p></p>
+    </section>
+
+
+    
+    <script>
+        let navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+</body>
+</html>
